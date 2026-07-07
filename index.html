@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKINews - Portal de Notícias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Lateral Escondido (Sidebar) -->
+    <div class="sidebar" id="sidebarMenu">
+        <div class="sidebar-header">
+            <h3>Navegação</h3>
+            <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+        <ul>
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="mundo.html">Mundo</a></li>
+            <li><a href="esporte.html">Esportes</a></li>
+            <li><a href="tecnologia.html">Tecnologia</a></li>
+            <li><a href="videos.html">📺 Vídeos</a></li> 
+        </ul>
+    </div>
+
+    <!-- Tela escura de fundo quando o menu abre -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Barra Superior Verde (Idêntica ao modelo) -->
+    <header>
+        <div class="header-top-bar">
+            <!-- Ícone Hambúrguer com texto embaixo -->
+            <button class="menu-hamburger-btn" id="menuBtn">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="menu-text">MENU</span>
+            </button>
+
+            <!-- Logo Centralizado -->
+            <div class="logo">AKINews</div>
+
+            <!-- Botão da Lupa de Busca -->
+            <button class="search-btn" id="searchBtn">
+                <svg viewBox="0 0 24 24" class="search-icon">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Campo de Busca Expansível -->
+        <div class="search-bar-container" id="searchBarContainer">
+            <input type="text" placeholder="Buscar no AKINews..." id="searchInput">
+            <button id="searchSubmit">Ir</button>
+        </div>
+    </header>
+
+    <!-- Área Principal do Conteúdo -->
+    <main class="article-container">
+        <span class="article-category">GEOPOLÍTICA</span>
+        <h1 class="article-title">Grande avanço na corrida espacial e as novas tecnologias que mudam o futuro econômico global</h1>
+        <p class="article-subtitle">Confira os detalhes sobre as últimas missões e o impacto da disputa tecnológica entre as grandes potências.</p>
+
+        <div class="article-meta">
+            <span class="date">06/07/2026 - 00:36 • Atualizado às 01:00</span>
+        </div>
+
+        <hr class="divider">
+
+        <div class="article-image-box">
+            <img src="assets/images/destaque.jpg" alt="Notícia AKINews">
+            <span class="image-caption">Missão espacial foca em novas tecnologias de infraestrutura global.</span>
+        </div>
+
+        <article class="article-body">
+            <p>A corrida espacial entre as maiores potências econômicas mundiais atingiu um novo patamar esta semana, trazendo reflexos diretos no desenvolvimento de tecnologias civis e militares de alta produtividade.</p>
+
+            <p>O foco principal está na implementação de redes de satélites e novas estruturas que prometem baratear custos logísticos e de comunicação internacional, impactando também a segurança de dados globais.</p>
+
+            <h2>Corrida Tecnológica</h2>
+            <p>Especialistas apontam que as novas medidas de investimento aceleram a evolução da pesquisa científica. "Estamos falando de um ecossistema que dita o ritmo da inovação nos próximos dez anos", afirmou o relatório de análise estratégia internacional.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AKINews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
