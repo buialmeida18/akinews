@@ -272,3 +272,27 @@ footer {
     color: #777777;
     font-family: 'Segoe UI', sans-serif;
 }
+
+.btn-entrar-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c5e34;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-entrar-header:hover {
+    background-color: #0a4d2a;
+}
+
+.btn-entrar-header:active {
+    transform: scale(0.95);
+}
