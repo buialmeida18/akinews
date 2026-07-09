@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AkiNews - O seu portal de notícias focado em política, atualidades e informações em tempo real.">
+<meta name="keywords" content="notícias, política, Flávio
+    <meta property="og:title" content="AkiNews - Últimas Notícias de Política">
+<meta property="og:description" content="Acompanhe os detalhes e os vídeos exclusivos sobre os principais acontecimentos políticos.">
+<meta property="og:image" content="foto-flavio-bolsonaro.jpg">
+<meta property="og:url" content="https://akinews.vercel.app">
     <title>AKINews - Portal de Notícias</title>
     <meta name="google-site-verification" content="9xspi7tNsddQ2k0KJHg70sR7W2keFa8Wb6PbaXHKOc0" />
     <link rel="stylesheet" href="style.css">
     <link rel="canonical" href="https://seu-dominio-gratis.com/">
-    
 </head>
 <body>
 
@@ -204,6 +209,38 @@ FIQUE DE OLHO
 
 A disputa entre Flávio Bolsonaro e Ronaldo Caiado promete esquentar ainda mais nos próximos dias, especialmente com a proximidade das eleições e com as negociações comerciais entre Brasil e EUA em andamento.
         </p>
+        <!-- =======================================================
+     BOTÃO DE COMPARTILHAR NOTÍCIA (Coloque abaixo do texto)
+     ======================================================= -->
+<div class="area-compartilhar" style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #eeeeee; text-align: center;">
+    
+    <!-- Botão Principal: Usa a função nativa do celular para compartilhar -->
+    <button onclick="compartilharNoticia()" style="background-color: #0c5e34; color: white; border: none; padding: 12px 24px; font-size: 1rem; font-weight: bold; border-radius: 4px; width: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span>🔄 Compartilhar Matéria</span>
+    </button>
+
+</div>
+
+<!-- SCRIPT MÁGICO PARA FAZER O BOTÃO FUNCIONAR NO CELULAR -->
+<script>
+function compartilharNoticia() {
+    // Se o celular do leitor aceitar o compartilhamento nativo (como o WhatsApp)
+    if (navigator.share) {
+        navigator.share({
+            title: 'AkiNews - Notícia sobre Flávio Bolsonaro',
+            text: 'Confira essa matéria exclusiva no portal AkiNews!',
+            url: window.location.href // Pega automaticamente o link do seu site (Vercel ou GitHub)
+        })
+        .then(() => console.log('Compartilhado com sucesso!'))
+        .catch((error) => console.log('Erro ao compartilhar:', error));
+    } else {
+        // Caso o navegador seja antigo, ele apenas copia o link e avisa o usuário
+        navigator.clipboard.writeText(window.location.href);
+        alert('Link da notícia copiado para a área de transferência! É só colar para enviar.');
+    }
+}
+</script>
+
 
     </div>
 
